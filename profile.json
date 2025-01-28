@@ -1,0 +1,48 @@
+[
+    {
+      "user_id": 1,
+      "username": "john_doe",
+      "password": "securePassword123",
+      "email_id": "john.doe@example.com",
+      "date_of_birth": "1990-05-15",
+      "gender": "Male",
+      "profile_photo_url": "https://example.com/photos/john_doe.jpg"
+    },
+    {
+      "user_id": 2,
+      "username": "jane_smith",
+      "password": "passwordSecure456",
+      "email_id": "jane.smith@example.com",
+      "date_of_birth": "1985-08-22",
+      "gender": "Female",
+      "profile_photo_url": "https://example.com/photos/jane_smith.jpg"
+    },
+    {
+      "user_id": 3,
+      "username": "amit_sharma",
+      "password": "passw0rd789",
+      "email_id": "amit.sharma@example.com",
+      "date_of_birth": "1992-11-10",
+      "gender": "Male",
+      "profile_photo_url": "https://example.com/photos/amit_sharma.jpg"
+    },
+    {
+      "user_id": 4,
+      "username": "maria_gomez",
+      "password": "Maria!2023",
+      "email_id": "maria.gomez@example.com",
+      "date_of_birth": "1995-02-25",
+      "gender": "Female",
+      "profile_photo_url": "https://example.com/photos/maria_gomez.jpg"
+    },
+    {
+      "user_id": 5,
+      "username": "liam_brown",
+      "password": "liamPass#321",
+      "email_id": "liam.brown@example.com",
+      "date_of_birth": "1988-12-05",
+      "gender": "Male",
+      "profile_photo_url": "https://example.com/photos/liam_brown.jpg"
+    }
+  ]
+  

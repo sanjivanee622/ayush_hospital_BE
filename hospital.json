@@ -1,0 +1,58 @@
+[
+    {
+      "hospital_id": 1,
+      "state_id": 101,
+      "city_id": 1001,
+      "area_id": 5001,
+      "postal_code_id": 110001,
+      "coordinates_id": "28.6139, 77.2090",
+      "hospital_name": "Central Hospital",
+      "yoga": "yes",
+      "unani": "no",
+      "ayurveda": "yes",
+      "homeopathy": "no",
+      "siddha": "no",
+      "neuropathy": "yes",
+      "number_of_beds": 200,
+      "number_of_doctors": 50,
+      "contact_number": "+91-9876543210",
+      "email_id": "info@centralhospital.com",
+      "website_link": "https://www.centralhospital.com",
+      "address": "123 Main Street, New Delhi, India",
+      "images": [
+        {
+          "url": "https://example.com/images/hospital1.jpg"
+        },
+        {
+          "url": "https://example.com/images/hospital1-2.jpg"
+        }
+      ]
+    },
+    {
+      "hospital_id": 2,
+      "state_id": 102,
+      "city_id": 1002,
+      "area_id": 5002,
+      "postal_code_id": 110002,
+      "coordinates_id": "28.7041, 77.1025",
+      "hospital_name": "City Health Center",
+      "yoga": "no",
+      "unani": "yes",
+      "ayurveda": "no",
+      "homeopathy": "yes",
+      "siddha": "no",
+      "neuropathy": "no",
+      "number_of_beds": 150,
+      "number_of_doctors": 40,
+      "contact_number": "+91-9876543220",
+      "email_id": "contact@cityhealthcenter.com",
+      "website_link": "https://www.cityhealthcenter.com",
+      "address": "45 Health Road, Mumbai, India",
+      "images": [
+        {
+          "url": "https://example.com/images/hospital2.jpg"
+        }
+      ]
+    }
+  ]
+  
