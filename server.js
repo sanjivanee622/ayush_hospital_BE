@@ -5,13 +5,22 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Load JSON files with error handling
-let profiles, hospitals, feedbacks;
+// Helper function to load JSON files with error handling
+function loadJSONFile(filePath) {
+  try {
+    return JSON.parse(fs.readFileSync(path.resolve(__dirname, filePath), 'utf8'));
+  } catch (err) {
+    console.error(`Error loading file at ${filePath}:`, err);
+    throw new Error(`Failed to load file: ${filePath}`);
+  }
+}
 
+// Load JSON files
+let profiles, hospitals, feedbacks;
 try {
-  profiles = JSON.parse(fs.readFileSync(path.join(__dirname, 'Profile.json'), 'utf8'));
-  hospitals = JSON.parse(fs.readFileSync(path.join(__dirname, 'Hospital.json'), 'utf8'));
-  feedbacks = JSON.parse(fs.readFileSync(path.join(__dirname, 'Feedback.json'), 'utf8'));
+  profiles = loadJSONFile('Profile.json');
+  hospitals = loadJSONFile('Hospital.json');
+  feedbacks = loadJSONFile('Feedback.json');
 } catch (err) {
   console.error('Error loading JSON files:', err);
   process.exit(1); // Exit if files can't be loaded
@@ -66,7 +75,7 @@ app.get('/feedbacks/:hospital_id', (req, res) => {
 // Test route for checking file loading
 app.get('/test-files', (req, res) => {
   try {
-    const profile = JSON.parse(fs.readFileSync(path.join(__dirname, 'Profile.json'), 'utf8'));
+    const profile = loadJSONFile('Profile.json');
     res.json({ message: 'Files loaded successfully', profile: profile[0] });
   } catch (err) {
     res.status(500).send({ error: 'Error reading files' });
