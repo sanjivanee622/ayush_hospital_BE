@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 // Helper function to load JSON files with error handling
 function loadJSONFile(filePath) {
   try {
-    return JSON.parse(fs.readFileSync(path.resolve(__dirname, filePath), 'utf8'));
+    return JSON.parse(fs.readFileSync(path.resolve(__dirname, 'src', filePath), 'utf8'));
   } catch (err) {
     console.error(`Error loading file at ${filePath}:`, err);
     throw new Error(`Failed to load file: ${filePath}`);
